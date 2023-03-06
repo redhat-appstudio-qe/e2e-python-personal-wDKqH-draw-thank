@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-5kxw
+  namespace: e2e-demos-vuzd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:72c5c3ab2b6b9b1becaeeb6cfaf5fc4081dd5bd25e6429c025eed6d916905fc1
+        name: my-python
+        resources: {}
+status: {}
